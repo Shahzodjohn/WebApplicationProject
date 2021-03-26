@@ -1,0 +1,27 @@
+﻿@model List<WebApplicationProject.Models.Person>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <table class="table">
+        <tr>
+            <td>Id</td>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>MiddleName</td>
+        </tr>
+       @foreach (var person in Model)
+        {
+           <tr>
+               <td>@person.Id</td>
+               <td>@person.FirstName</td>
+               <td>@person.LastName</td>
+               <td>@person.MiddleName</td>
+           </tr>
+        }
+    </table>
+    <table>
+
+    </table>
+</div>
